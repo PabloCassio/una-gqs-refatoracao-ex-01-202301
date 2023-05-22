@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Mensagem {
 
+  	
   public boolean realizaPerguntaVacinaEmDia(Pessoa pessoa, Scanner scanner) {
     int contador = 0;
     boolean erroTentativas = false;
