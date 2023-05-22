@@ -1,12 +1,20 @@
 public class CalculoPorcentagem {
-  public void calculaPorcentagem(Pessoa pessoa) {
-    if (pessoa.estaRetornandoViagem.equals("SIM") || pessoa.teveContatoComPessoasSintomaticas.equals("SIM") || pessoa.teveSintomasRecentemente.equals("SIM")){
-      pessoa.porcentagemInfeccao += 300;
-    }
+	public void calculaPorcentagem(Pessoa pessoa) {
+		if (pessoa.estaRetornandoViagem.equals("SIM")) {
+			pessoa.porcentagemInfeccao += 30;
+		}
 
-    else if (pessoa.cartaoVacinaEmDia.equals("NAO")) {
-      pessoa.porcentagemInfeccao += 100;
-    }
-  }
-  }
+		if (pessoa.cartaoVacinaEmDia.equals("NAO")) {
+			pessoa.porcentagemInfeccao += 10;
+		}
+		if (pessoa.teveContatoComPessoasSintomaticas.equals("SIM")) {
+			pessoa.porcentagemInfeccao += 30;
+		}
+		if (pessoa.teveSintomasRecentemente.equals("SIM")) {
+			pessoa.porcentagemInfeccao += 30;
+		}
+
+
+	}
+}
 
