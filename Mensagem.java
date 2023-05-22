@@ -115,3 +115,5 @@ public class Mensagem {
         "Gentileza procurar ajuda médica caso apareça algum sintoma.");
   }
 }
+
+
